@@ -47,8 +47,34 @@ header nav ul li a {
 header nav ul li a:hover {
   background-color: #214d00; /* Darker green on hover */
   color: white;
-} /* Change text color to white on hover */
+}
+/* Dropdown container*/
+.dropdown {
+  position: relative;
+}
+/* Hide the dropdown content initially */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
+/* Style individual dropdown links */
+.dropdown-content li a {
+  color: black;
+  padding: 8px 12px;
+  display: block;
+  text-decoration: none;
+}
+
+/* Show dropdown on hover */
+.dropdown-content li a:hover {
+  background-color: #ddd;
+}
 /*Hero Section*/
 
 .hero {

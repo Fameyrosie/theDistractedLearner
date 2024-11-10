@@ -1,3 +1,20 @@
+const dropdownBtn = document.querySelector(".dropdown-btn")
+const dropdownContent = document.querySelector(".dropdown-content")
+
+dropdownBtn.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent link from navigating
+    dropdownContent.style.display =
+      dropdownContent.style.display === "block" ? "none" : "block";
+  });
+  // Optional: Close dropdown if clicked outside
+document.addEventListener("click", function (event) {
+    if (!dropdownBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+      dropdownContent.style.display = "none";
+    }
+  });
+
+
+
 const incomeInput = document.getElementById('income');
 const expensesInput = document.getElementById('expenses');
 const resultDisplay = document.getElementById('result');
