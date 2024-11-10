@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+/*Header Section*/
+header {
+  background-color: #9fe870;
+  color: #163300;
+  padding: 20px 0;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+header nav {
+  display: inline-block;
+  float: right;
+}
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #163300;
+  font-size: 18px;
+}
+
+header nav ul li a:hover {
+  background-color: #214d00; /* Darker green on hover */
+  color: white;
+} /* Change text color to white on hover */
+
+/*Hero Section*/
+
+.hero {
+  background-color: #9fe870;
+  color: #163300;
+  text-align: center;
+  padding: 100px 0;
+  width: 100%;
+}
+
+/*Feature Section*/
+.features {
+  background-color: #9fe870;
+  display: flex; /* Enable Flexbox for layout */
+  justify-content: space-between; /* Distribute the feature blocks evenly */
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.feature-block {
+  flex: 1;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease; /*This allows the box to animate smoothly when transformed (like when hovered). The animation will last 0.3 seconds.*/
+}
+
+.feature-block h3 {
+  color: #163300;
+  margin-bottom: 15px;
+}
+
+.feature-block p {
+  color: #163300; /*nice font color*/
+}
+
+.feature-block:hover {
+  transform: translateY(-5px); /* Adds a hover effect */
+}
